@@ -1,0 +1,10 @@
+package com.telusko.first;
+
+public class Laptop {
+
+	public void compile() {
+		System.out.println("Compiling");
+		
+	}
+
+}

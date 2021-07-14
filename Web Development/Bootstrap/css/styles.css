@@ -1,0 +1,64 @@
+#title {
+  background-color: #ff4c68;
+}
+
+.container-fluid {
+  padding: 3% 15%;
+}
+
+i {
+  color: #FF99A9;
+  padding-bottom: 20px;
+}
+
+i:hover {
+  color: #ff4c68;
+}
+
+.testimonials {
+  padding: 7%;
+  text-align: center;
+  background-color: #FF99A9;
+  color: white;
+}
+
+#press {
+  background-color: #FF99A9;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.press-logo {
+  width: 15%;
+  padding-bottom: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+#testi {
+  background-color: #FF99A9;
+}
+
+#pricing {
+  padding: 60px;
+  text-align: center;
+}
+
+#title-img {
+  transform: rotate(20deg);
+}
+
+
+@media only screen and (max-width: 990px) {
+  #title-h1 {
+    text-align: center;
+  }
+  #title-img {
+    transform: rotate(-20deg);
+    transform: scale(0.6);
+    text-align: center;
+    position: relative;
+    bottom: 120px;
+  }
+}

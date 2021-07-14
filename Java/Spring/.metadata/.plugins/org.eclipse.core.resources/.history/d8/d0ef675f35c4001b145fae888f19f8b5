@@ -1,0 +1,6 @@
+package com.sayan.springmvcboot.model;
+
+public class Alien {
+	private int aid;
+	private String aname;
+}

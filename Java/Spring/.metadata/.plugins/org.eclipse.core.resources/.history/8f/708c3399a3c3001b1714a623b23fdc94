@@ -1,0 +1,19 @@
+package com.sayan.SpringDemo;
+
+public class Alien {
+	private int age;
+	private Computer com;
+	public Alien() {
+		System.out.println("Alien object created.");
+	}
+	public void code() {
+		System.out.println("I am coding");
+		com.compile();
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+}

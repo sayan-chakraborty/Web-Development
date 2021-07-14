@@ -1,0 +1,23 @@
+package com.sayan.SpringDemo;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.FileSystemResource;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	//BeanFactory factory = new XmlBeanFactory(new FileSystemResource("spring.xml"));
+        ApplicationContext factory = new ClassPathXmlApplicationContext("spring.xml");
+        
+        // Understanding singleton bean i.e. when object is stored inside the spring container, it's only created once. All other beans created will point to the same object
+        Alien obj1 = (Alien) factory.getBean("alien");
+        obj1.code();
+        System.out.println(obj1.getAge());
+        // After changing the scope of the bean to prototype we spring will create multiple objects
+        
+    }
+}

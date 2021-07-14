@@ -1,0 +1,5 @@
+package com.sayan.SpringDemo;
+
+public interface Computer {
+	void compile();
+}
